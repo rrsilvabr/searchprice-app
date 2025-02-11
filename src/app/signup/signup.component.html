@@ -1,0 +1,106 @@
+<div id="body">
+  <header>
+    <img
+      routerLink="/"
+      src="assets/images/searchprice-logo.svg"
+      alt="Search Price Logo"
+      width="320px"
+      height="70px"
+    />
+    <div id="signin-container">
+      <button routerLink="/signin" id="signin-btn">Entrar</button>
+    </div>
+  </header>
+  <main>
+    <div id="form-container">
+      <h1>Cadastre-se</h1>
+      <form [formGroup]="signupForm" (ngSubmit)="handleSubmit()">
+        <label for="name">Nome </label>
+        <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched" class="error-message">
+          *Este campo é obrigatório
+        </div>
+        <input type="text" formControlName="name" id="name" placeholder="João Silva"
+        [class.input-error]="signupForm.get('name')?.invalid && signupForm.get('name')?.touched"/>
+        <label for="email">Email </label>
+        <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="error-message">
+          *Este campo é obrigatório
+        </div>
+        <input
+          type="email"
+          formControlName="email"
+          id="email"
+          placeholder="joaosilva@gmail.com"
+          [class.input-error]="signupForm.get('email')?.invalid && signupForm.get('email')?.touched"
+        />
+        <label for="phone">Celular </label>
+        <div *ngIf="signupForm.get('phone')?.invalid && signupForm.get('phone')?.touched" class="error-message">
+          *Este campo é obrigatório
+        </div>
+        <input
+          type="tel"
+          formControlName="phone"
+          id="phone"
+          placeholder="(11) 91299-8183"
+          [class.input-error]="signupForm.get('phone')?.invalid && signupForm.get('phone')?.touched"
+        />
+        <label for="cpf_cnpj">CPF/CNPJ</label>
+        <div *ngIf="signupForm.get('cpf_cnpj')?.invalid && signupForm.get('cpf_cnpj')?.touched" class="error-message">
+          *Este campo é obrigatório
+        </div>
+        <input
+          type="text"
+          formControlName="cpf_cnpj"
+          id="cpf_cnpj"
+          placeholder="xxxxxxxxxxxx"
+          [class.input-error]="signupForm.get('cpf_cnpj')?.invalid && signupForm.get('cpf_cnpj')?.touched"
+        />
+        <label for="password">Senha</label>
+        <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched" class="error-message">
+          *A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula, um número e um símbolo especial
+        </div> 
+        <input
+          type="password"
+          formControlName="password"
+          id="password"
+          placeholder="*********"
+          [class.input-error]="signupForm.get('password')?.invalid && signupForm.get('password')?.touched"
+        />
+        <label for="confirm_password">Confirme sua senha</label>
+        <div *ngIf="signupForm.get('confirm_password')?.invalid && signupForm.get('confirm_password')?.touched" class="error-message">
+          *Este campo é obrigatório
+        </div>
+        <input
+          type="password"
+          formControlName="confirm_password"
+          id="confirm_password"
+          placeholder="*********"
+          [class.input-error]="signupForm.get('confirm_password')?.invalid && signupForm.get('confirm_password')?.touched"
+        />
+        <div *ngIf="signupForm.get('terms_checkbox')?.invalid && signupForm.get('terms_checkbox')?.touched" class="error-message">
+          *Você deve concordar com os termos de uso
+        </div>
+        <div id="terms-container">
+          <input type="checkbox" formControlName="terms_checkbox" id="terms_checkbox" />
+        <label id="terms-label" for="terms_checkbox">Concordo com os termos de uso</label>
+        </div>
+        <a id="terms-link" href="">Acesse aos termos de uso</a>
+        <div class="submit-container">
+          <button id="signup-btn" type="submit" >Me cadastrar</button>
+        </div>
+      </form>
+      <a routerLink="/signin" id="signin-link">Já sou cadastrado</a>
+    </div>
+    
+    <div style="display: flex; flex-direction: column;">
+    <h2 style="color: white;">Profile Form</h2>
+    <p style="color: white;">Name: {{ signupForm.value.name }}</p>
+    <p style="color: white;">Email: {{ signupForm.value.email }}</p>
+    <p style="color: white;">Phone: {{ signupForm.value.phone }}</p>
+    <p style="color: white;">CPF/CNPJ: {{ signupForm.value.cpf_cnpj }}</p>
+    <p style="color: white;">Password: {{ signupForm.value.password }}</p>
+    <p style="color: white;">Confirm Password: {{ signupForm.value.confirm_password }}</p>
+    <p style="color: white;">Terms Checkbox: {{ signupForm.value.terms_checkbox }}</p>
+
+  </div>
+  </main>
+</div>

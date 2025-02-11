@@ -1,0 +1,160 @@
+$primary-color: #1a535c;
+$secundary-color: #4ecdc4;
+
+#body {
+    background-color: $primary-color;
+    height: 1000px;
+  }
+
+  header {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  #signup-container {
+    margin-right: 30px;
+  }
+  
+  #signup-btn {
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: white;
+    color: $primary-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    font-family: "Poppins";
+    font-weight: 600;
+  }
+
+  #signup-btn:hover {
+    background-color: $primary-color;
+    color: white;
+    border: white 1px solid;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main h1 {
+    color: $primary-color;
+    margin-top: 35px;
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+  
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 650px;
+    height: 430px;
+    border-radius: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: $primary-color;
+    font-size: 16px;
+  }
+  
+  input {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #dde5e7;
+    width: 230px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: $primary-color;
+  }
+  
+  input.input-error {
+    border-color: #B61111;
+  }
+  
+  .error-message {
+    color: #B61111;
+    font-size: 12px;
+  }
+
+  input[type="email"]{
+    margin-bottom: 7px;;
+  }
+  
+  input:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+  
+  input:hover {
+    border-color: $primary-color;
+  }
+  
+  input::placeholder {
+    color: #b5bdbe; /* Cor do texto do placeholder */
+    font-family: "Poppins"; /* Opcional: estilo do texto */
+    font-size: 15px;
+  }
+  
+  #forgot-password-link{
+    color: $primary-color;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  #forgot-password-link:hover{
+  color: $secundary-color;
+  }
+  .submit-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #signin-btn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: $primary-color;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Poppins";
+    width: 100px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+  }
+  
+  #signin-btn:hover {
+    background-color: #3f6e76;
+  }
+  
+  #signup-link{
+    color: $primary-color;
+    font-weight: 600;
+    transition: 0.2s;
+    padding: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  #signup-link:hover {
+    border-radius: 5px;
+    background-color: #edf2f2;
+  }
+  

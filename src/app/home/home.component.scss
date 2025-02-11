@@ -1,0 +1,499 @@
+$primary-color: #1a535c;
+$secundary-color: #4ecdc4;
+
+header {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+header img {
+  margin-left: 20px;
+}
+
+#signin-signup-container {
+  margin-right: 20px;
+}
+
+#signin-btn {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: $primary-color;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+#signup-btn {
+  padding: 12px 15px;
+  font-size: 16px;
+  background-color: white;
+  color: $primary-color;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+#signup-btn:hover {
+  background-color: $primary-color;
+  color: white;
+  border: white 1px solid;
+}
+
+#whatsapp-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #47CE57;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 16px;
+  display: flex;
+  text-align: left;
+  border: none;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 215px;
+  font-weight: 700;
+  z-index: 100; 
+  line-height: 1.5;
+}
+
+#whatsapp-btn img{
+  margin: 5px 6px 0 5px;
+}
+
+#video-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  border-radius: 20px;
+}
+
+#video-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section1 h1 {
+  margin-top: 30px;
+  color: $primary-color;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+#video-btn {
+  padding: 8px;
+  border-radius: 15px;
+  color: white;
+  background-color: $primary-color;
+  border: none;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin-bottom: 55px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#video-btn:hover {
+  background-color: #3f6e76;
+}
+
+#section2 {
+  background-color: $primary-color;
+  height: 660px;
+  border-top-left-radius: 20px;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+#marketplaces-comparison-table-img {
+  margin-top: 35px;
+  box-shadow: 5px 5px 10px rgba(225, 225, 225, 0.836);
+  border-radius: 8px;
+}
+
+#icons-container {
+  margin-top: 40px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 64px;
+}
+
+#icons-labels {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 555px;
+}
+
+#icons-labels p {
+  text-align: center;
+  color: $secundary-color;
+  font-size: 20px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+}
+
+.article-img {
+  margin-top: 40px;
+  width: 325px;
+  height: 325px;
+  float: left;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+article h4 {
+  color: $secundary-color;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+article h2 {
+  color: $primary-color;
+  font-weight: 500;
+  margin: 0;
+}
+
+article p {
+  color: $primary-color;
+  font-size: 14px;
+  margin: 0;
+}
+
+.article-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+  float: left;
+}
+
+.article-img2 {
+  margin-top: 40px;
+  width: 325px;
+  height: 325px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+#section4 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.gray-container {
+  width: 97%;
+  height: 110px;
+  background-color: #d1ddde;
+  border-radius: 20px;
+}
+
+.gray-container h3 {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  color: $primary-color;
+  margin-bottom: 5px;
+}
+
+.gray-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 420px;
+}
+
+.free-test-btn {
+  background-color: $primary-color;
+  padding: 12px;
+  border-radius: 22px;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Poppins";
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.free-test-btn:hover {
+  background-color: #3f6e76;
+}
+
+.talk-to-founders-btn {
+  background-color: #d1ddde;
+  text-decoration: underline;
+  color: #1a535c;
+  border: none;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.talk-to-founders-btn:hover {
+  background-color: #c3d3d4;
+}
+
+#section5 {
+  height: 520px;
+}
+
+#grid-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 750px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#grid-intro p {
+  font-size: 25px;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+#grid-intro span {
+  color: $secundary-color;
+}
+
+#grid-intro h3 {
+  font-size: 18px;
+  color: $secundary-color;
+  margin-bottom: 10px;
+}
+
+#grid-searchprice-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.grid-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcf5f3;
+  color: $primary-color;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#grid-topics-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin-top: 40px;
+  width: 250px;
+  height: 310px;
+}
+
+.grid-topic {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.grid-topic p {
+  color: $primary-color;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+.grid-topic img {
+  background-color: #dcf5f3;
+  border-radius: 15px;
+  padding: 3px;
+  float: left;
+  margin-right: 8px;
+}
+
+#grid-availability-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 15px 30px;
+  width: 600px;
+  height: 330px;
+}
+
+.grid-sp-available-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.grid-available-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#section6 {
+  height: 220px;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 45px;
+}
+
+#section6 h1,
+#section6 p {
+  color: white;
+}
+
+#section6 h1 {
+  font-size: 30px;
+}
+
+#section6 button {
+  background-color: white;
+  border-radius: 25px;
+  color: $primary-color;
+  border: none;
+  font-size: 19px;
+  padding: 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#section6 button:hover {
+  background-color: $primary-color;
+  color: white;
+  border: white 1px solid;
+}
+
+#section7 {
+  margin: 50px 20px 0 20px;
+}
+
+#section7 h2 {
+  color: $primary-color;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+mat-expansion-panel {
+  background-color: #dcf5f3;
+  margin-top: 10px;
+  padding: 7px 0;
+}
+
+mat-panel-title {
+  color: $primary-color;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+mat-expansion-panel p {
+  color: $primary-color;
+  font-family: "Poppins";
+}
+
+mat-expansion-panel.mat-expanded {
+  margin: 15px 0 !important;
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+  height: 240px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer h1 {
+  color: white;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+#contact-founders-btn {
+  background-color: white;
+  color: $primary-color;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  padding: 9px 10px;
+  font-weight: 600;
+  font-family: "Poppins";
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#contact-founders-btn:hover {
+  background-color: $primary-color;
+  border: white 1px solid;
+  color: white;
+}
