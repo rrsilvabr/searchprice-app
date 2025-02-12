@@ -1,1 +1,1 @@
-start: node search-price-app/server/server.mjs
+web: node search-price-app/server/server.mjs
