@@ -1,1 +1,1 @@
-start: node dist/search-price-app/server/server.mjs
+start: node server.mjs
