@@ -14,7 +14,6 @@ phases:
             - cp ./Procfile ./dist
             - echo Build completed on `date`
 artifacts:
-    type: zip
     files:
         - '**/*'
     base-directory: 'dist*'
