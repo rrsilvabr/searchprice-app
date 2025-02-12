@@ -1,0 +1,1 @@
+start: node dist/search-price-app/server/server.mjs
